@@ -130,5 +130,11 @@ namespace Library.BLL.Managers
 
             return penalite;
         }
+
+        // ===== OBTENIR UN EMPRUNT PAR ID =====
+        public Borrowing? GetBorrowingById(int id)
+        {
+            return _borrowingRepo.GetById(id);
+        }
     }
 }

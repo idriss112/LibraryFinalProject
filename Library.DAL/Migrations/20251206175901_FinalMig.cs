@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Library.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class FinalMig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -88,6 +90,62 @@ namespace Library.DAL.Migrations
                         principalTable: "Books",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Authors",
+                columns: new[] { "Id", "Nationalite", "Nom", "Prenom" },
+                values: new object[,]
+                {
+                    { 1, "Française", "Hugo", "Victor" },
+                    { 2, "Britannique", "Tolkien", "J.R.R." },
+                    { 3, "Britannique", "Rowling", "J.K." },
+                    { 4, "Française", "Saint-Exupéry", "Antoine de" },
+                    { 5, "Britannique", "Orwell", "George" },
+                    { 6, "Française", "Camus", "Albert" },
+                    { 7, "Colombienne", "García Márquez", "Gabriel" },
+                    { 8, "Américaine", "Hemingway", "Ernest" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Books",
+                columns: new[] { "Id", "AnneePublication", "Disponible", "ISBN", "Titre" },
+                values: new object[,]
+                {
+                    { 1, 1862, true, "978-2-253-09633-4", "Les Misérables" },
+                    { 2, 1954, true, "978-2-266-15410-9", "Le Seigneur des Anneaux" },
+                    { 3, 1997, true, "978-2-07-054127-3", "Harry Potter à l'école des sorciers" },
+                    { 4, 1943, false, "978-2-07-061275-8", "Le Petit Prince" },
+                    { 5, 1949, true, "978-0-452-28423-4", "1984" },
+                    { 6, 1942, false, "978-2-07-036002-4", "L'Étranger" },
+                    { 7, 1967, true, "978-2-02-037644-2", "Cent ans de solitude" },
+                    { 8, 1952, true, "978-0-684-80122-3", "Le Vieil Homme et la Mer" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AuthorBooks",
+                columns: new[] { "AuthorId", "BookId" },
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 2, 2 },
+                    { 3, 3 },
+                    { 4, 4 },
+                    { 5, 5 },
+                    { 6, 6 },
+                    { 7, 7 },
+                    { 8, 8 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Borrowings",
+                columns: new[] { "Id", "BookId", "DateEmprunt", "DateRetourPrevue", "DateRetourReelle", "NomEmprunteur", "Penalite" },
+                values: new object[,]
+                {
+                    { 1, 4, new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "Jean Dupont", 0m },
+                    { 2, 6, new DateTime(2024, 11, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 11, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "Marie Laurent", 6.00m },
+                    { 3, 1, new DateTime(2024, 11, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 11, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 11, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "Pierre Martin", 0m },
+                    { 4, 2, new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 11, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "Sophie Bernard", 5.00m }
                 });
 
             migrationBuilder.CreateIndex(
