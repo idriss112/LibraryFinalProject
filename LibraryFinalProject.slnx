@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../../LibraryFinalProject/GestionBibliotheque.UI/Library.UI.csproj" />
+  <Project Path="GestionBibliotheque.UI/Library.UI.csproj" />
   <Project Path="Library.BLL/Library.BLL.csproj" Id="cb5ff62b-bc2f-4c6f-b1ba-9d5928f4789e" />
   <Project Path="Library.DAL/Library.DAL.csproj" Id="e71a2acc-18c1-47b4-92c5-4d6e0f779b06" />
   <Project Path="Library.Models/Library.Models.csproj" Id="47375556-899f-4747-a229-02e4f972594b" />
