@@ -120,7 +120,7 @@ LibrarySolution/
 
 ### 1️⃣ Cloner le dépôt
 ```bash
-git clone https://github.com/votre-utilisateur/library-management.git
+git clone https://github.com/idriss112/LibraryFinalProject.git
 cd library-management
 ```
 
@@ -204,7 +204,8 @@ Projet sous licence MIT — voir le fichier **LICENSE**.
 ---
 
 ## 👤 Auteur
-**Driss Laaziri**  
+**Driss Laaziri** 
+linkedin : https://www.linkedin.com/in/idrisslzr/
 GitHub : https://github.com/idriss112  
 Email : idrisslaaziri@gmail.com  
 
