@@ -10,7 +10,7 @@ Une application Windows Forms moderne permettant la gestion complète d’une bi
 
 ---
 
-## 📋 Table des Matières
+##Table des Matières
 - [Aperçu](#aperçu)
 - [Fonctionnalités](#fonctionnalités)
 - [Stack Technique](#stack-technique)
@@ -24,7 +24,7 @@ Une application Windows Forms moderne permettant la gestion complète d’une bi
 
 ---
 
-## 🎯 Aperçu
+##Aperçu
 
 Cette application de gestion de bibliothèque permet d’administrer facilement les livres, auteurs et emprunts dans une interface **modernisée style Windows 2026**.  
 Le projet utilise **Entity Framework Core** avec une approche **Code‑First**, ainsi qu’une **architecture 4‑tiers propre et maintenable**.
@@ -39,7 +39,7 @@ Le projet utilise **Entity Framework Core** avec une approche **Code‑First**, 
 
 ---
 
-## ✨ Fonctionnalités
+##Fonctionnalités
 
 ### 📚 Gestion des Livres
 - Ajouter, modifier, supprimer un livre  
@@ -68,7 +68,7 @@ Le projet utilise **Entity Framework Core** avec une approche **Code‑First**, 
 
 ---
 
-## 🛠️ Stack Technique
+##Stack Technique
 
 ### Backend
 - **C# 12**
@@ -90,7 +90,7 @@ Le projet utilise **Entity Framework Core** avec une approche **Code‑First**, 
 
 ---
 
-## 🏗️ Architecture
+##Architecture
 
 ```
 LibrarySolution/
@@ -116,7 +116,7 @@ LibrarySolution/
 
 ---
 
-## 🚀 Démarrage
+##Démarrage
 
 ### 1️⃣ Cloner le dépôt
 ```bash
@@ -167,7 +167,7 @@ Relation plusieurs‑à‑plusieurs.
 
 ---
 
-## ⚖️ Pénalités & Règles Métier
+##Pénalités & Règles Métier
 - Un livre ne peut être emprunté que s’il est disponible  
 - Retour obligatoire après la date d’emprunt  
 - Pénalité = jours de retard × 1$  
@@ -175,7 +175,7 @@ Relation plusieurs‑à‑plusieurs.
 
 ---
 
-## 🧪 Améliorations Futures
+##Améliorations Futures
 - Ajout d’un tableau de bord statistique  
 - Export PDF/Excel  
 - Recherche avancée  
@@ -184,7 +184,7 @@ Relation plusieurs‑à‑plusieurs.
 
 ---
 
-## 🤝 Contribution
+##Contribution
 
 Les contributions sont les bienvenues !
 
@@ -198,7 +198,7 @@ git checkout -b feature/NouvelleFonctionnalite
 
 ---
 
-## 📝 Licence
+##Licence
 Projet sous licence MIT — voir le fichier **LICENSE**.
 
 ---
