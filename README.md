@@ -11,7 +11,7 @@ Une application Windows Forms moderne permettant la gestion complète d’une bi
 ---
 
 ##Table des Matières
-- [Aperçu](#aperçu)
+- [Aperçu](#Aperçu)
 - [Fonctionnalités](#fonctionnalités)
 - [Stack Technique](#stack-technique)
 - [Architecture](#architecture)
